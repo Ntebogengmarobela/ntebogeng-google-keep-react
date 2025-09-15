@@ -1,6 +1,6 @@
-import "./Navbar.css";
+import './Navbar.css';
 
-function Navbar() {
+const Navbar = () => {
   return (
     <nav>
       <div className="logo-area">
@@ -52,6 +52,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

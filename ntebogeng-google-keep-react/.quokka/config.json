@@ -1,0 +1,9 @@
+{
+  "pro": false,
+  "babel": true,
+  "plugins": ["jsdom-quokka-plugin"],
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest"
+  }
+}

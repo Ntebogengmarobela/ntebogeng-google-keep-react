@@ -1,12 +1,43 @@
-export default function Note(props) {
+import React, { useState } from 'react';
+
+const Note = (props) => {
+  const { toggleModal, note, setSelectedNote, } = props;
+  const [isHover, setIsHover] = useState(false);
+
+  const noteClickHandler = () => {
+    toggleModal();
+    setSelectedNote(note);
+  };
+
+  const hoverOverHandler = () => {
+    setIsHover(true);
+  };
+  
+  const hoverOutHandler = () => {
+    setIsHover(false);
+  };
+
+  const deleteHandler = () => props.deleteNote(note.id)
+
   return (
-    <div className="note" id="note.id">
-      <span className="material-symbols-outlined check-circle">
-        check_circle
-      </span>
-      <span className="title">{props.title}</span>
-      <span className="text">{props.text}</span>
-      <div className="note-footer">
+    <div
+      className="note"
+      id={props.id}
+      onClick={noteClickHandler}
+      onMouseOver={hoverOverHandler}
+      onMouseOut={hoverOutHandler}
+    >
+      {isHover && (
+        <span className="material-symbols-outlined check-circle">
+          check_circle
+        </span>
+      )}
+      <div className="title">{note.title}</div>
+      <div className="text">{note.text}</div>
+      <div
+        className="note-footer"
+        style={{ visibility: isHover ? 'visible' : 'hidden' }}
+      >
         <div className="tooltip">
           <span className="material-symbols-outlined hover small-icon">
             add_alert
@@ -25,7 +56,7 @@ export default function Note(props) {
           </span>
           <span className="tooltip-text">Add image</span>
         </div>
-        <div className="tooltip archive">
+        <div className="tooltip archive" onClick={deleteHandler}>
           <span className="material-symbols-outlined hover small-icon">
             archive
           </span>
@@ -40,4 +71,8 @@ export default function Note(props) {
       </div>
     </div>
   );
-}
+};
+
+export default Note;
+
+

@@ -1,0 +1,42 @@
+{
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 100,
+  "editor.tabSize": 2,
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+
+  "files.associations": {
+    "*.js": "javascript",
+    "*.jsx": "javascriptreact",
+    "*.ts": "typescript",
+    "*.tsx": "typescriptreact"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "auto-rename-tag.activationOnLanguage": [
+    "html",
+    "xml",
+    "php",
+    "javascript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+
+  "powermode.enabled": true,
+  "powermode.explosions.enabled": true,
+  "powermode.combo.counterEnabled": "show",
+  "powermode.combo.timerEnabled": "show",
+  "powermode.shake.enabled": false,
+  "powermode.combo.location": "off",
+  "powermode.explosions.size": 5,
+  "powermode.presets": "fireworks",
+  "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "editor.minimap.enabled": true,
+  "workbench.editor.enablePreview": false
+}

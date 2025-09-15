@@ -1,6 +1,6 @@
-import "./Sidebar.css";
+import './Sidebar.css';
 
-function Sidebar() {
+const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar-item active-item">
@@ -27,6 +27,6 @@ function Sidebar() {
       </div>
     </div>
   );
-}
+};
 
 export default Sidebar;

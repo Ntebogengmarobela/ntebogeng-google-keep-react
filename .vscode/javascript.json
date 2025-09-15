@@ -1,0 +1,154 @@
+{
+  "JSX onClick prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "clickp",
+    "body": ["onClick={${1}}"],
+    "description": "JSX onClick={}"
+  },
+  "JSX onClick with function": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "clickf",
+    "body": ["onClick={() => {", "  ${1}", "}}"],
+    "description": "JSX onClick with arrow function"
+  },
+  "JSX onMouseEnter prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "mouseenter",
+    "body": ["onMouseEnter={${1}}"],
+    "description": "JSX onMouseEnter={}"
+  },
+  "JSX onMouseLeave prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "mouseleave",
+    "body": ["onMouseLeave={${1}}"],
+    "description": "JSX onMouseLeave={}"
+  },
+  "JSX onMouseOver prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "mouseover",
+    "body": ["onMouseOver={${1}}"],
+    "description": "JSX onMouseOver={}"
+  },
+  "JSX onMouseOut prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "mouseout",
+    "body": ["onMouseOut={${1}}"],
+    "description": "JSX onMouseOut={}"
+  },
+  "JSX onKeyDown prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "keydown",
+    "body": ["onKeyDown={${1}}"],
+    "description": "JSX onKeyDown={}"
+  },
+  "JSX onKeyUp prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "keyup",
+    "body": ["onKeyUp={${1}}"],
+    "description": "JSX onKeyUp={}"
+  },
+  "JSX onKeyPress prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "keypress",
+    "body": ["onKeyPress={${1}}"],
+    "description": "JSX onKeyPress={}"
+  },
+  "JSX onChange prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "chgp",
+    "body": ["onChange={${1}}"],
+    "description": "JSX onChange={}"
+  },
+  "JSX onChange TS typed": {
+    "scope": "typescriptreact",
+    "prefix": "chgpt",
+    "body": [
+      "onChange={(e: React.ChangeEvent<HTMLInputElement>) => {",
+      "  ${1}",
+      "}}"
+    ],
+    "description": "TS onChange with event typing"
+  },
+  "JSX onSubmit prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "submit",
+    "body": ["onSubmit={${1}}"],
+    "description": "JSX onSubmit={}"
+  },
+  "JSX onFocus prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "focus",
+    "body": ["onFocus={${1}}"],
+    "description": "JSX onFocus={}"
+  },
+  "JSX onBlur prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "blur",
+    "body": ["onBlur={${1}}"],
+    "description": "JSX onBlur={}"
+  },
+  "JSX id prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "idp",
+    "body": ["id={${1}}"],
+    "description": "JSX id={}"
+  },
+  "JSX className prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "clsp",
+    "body": ["className={${1}}"],
+    "description": "JSX className={}"
+  },
+  "JSX style prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "sty",
+    "body": ["style={{ ${1} }}"],
+    "description": "JSX style={{}}"
+  },
+  "JSX ref prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "refp",
+    "body": ["ref={${1}}"],
+    "description": "JSX ref={}"
+  },
+  "JSX key prop": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "keyp",
+    "body": ["key={${1}}"],
+    "description": "JSX key={}"
+  },
+  "React useState": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "usestate",
+    "body": ["const [${1:state}, set${2:State}] = useState(${3:\"\"})"],
+    "description": "React useState hook"
+  },
+  "React useEffect": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "useeffect",
+    "body": ["useEffect(() => {", "  ${1:// effect}", "}, [])"],
+    "description": "React useEffect with empty deps"
+  },
+  "React useRef": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "useref",
+    "body": ["const ${1:ref} = useRef<${2:HTMLDivElement | null}>(null)"],
+    "description": "React useRef hook"
+  },
+  "React functional component": {
+    "scope": "javascript,javascriptreact,typescriptreact",
+    "prefix": "rfc",
+    "body": [
+      "const ${1:ComponentName}: React.FC<${2:Props}> = (${3:props}) => {",
+      "  return (",
+      "    <div>",
+      "      ${4}",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:ComponentName};"
+    ],
+    "description": "React functional component boilerplate (TS optional)"
+  }
+}
