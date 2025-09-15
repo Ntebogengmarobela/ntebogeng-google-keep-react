@@ -16,8 +16,10 @@ const Note = (props) => {
   const hoverOutHandler = () => {
     setIsHover(false);
   };
-
-  const deleteHandler = () => props.deleteNote(note.id)
+    const deleteHandler = (e) => {
+      e.stopPropagation();
+      props.deleteNote(note.id);
+    };
 
   return (
     <div
